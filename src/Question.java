@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class Question {
+    private boolean select;
     private String quesName;
     private ArrayList<String> answer;
     private int corr;
@@ -36,5 +37,13 @@ public class Question {
 
     public void setCorr(int corr) {
         this.corr = corr;
+    }
+
+    public boolean isSelect() {
+        return select;
+    }
+
+    public void setSelect(boolean select) {
+        this.select = select;
     }
 }
